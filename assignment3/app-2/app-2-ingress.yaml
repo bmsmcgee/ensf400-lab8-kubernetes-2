@@ -9,7 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/canary-weight: "30"
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: app-2
+  # ingressClassName: app-2
   rules:
   - http:
       paths:
