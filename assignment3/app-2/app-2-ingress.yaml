@@ -2,14 +2,14 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-2-ingress
-  labels:
-    app: nginx-canary
+  # labels:
+  #   app: app-2
   annotations:
     nginx.ingress.kubernetes.io/canary: "true"
     nginx.ingress.kubernetes.io/canary-weight: "30"
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx-canary
+  ingressClassName: app-2
   rules:
   - http:
       paths:
@@ -17,7 +17,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: app-2-svc
+            name: app-2
             port: 
               number: 8080
 

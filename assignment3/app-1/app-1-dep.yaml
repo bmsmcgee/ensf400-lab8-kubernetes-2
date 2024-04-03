@@ -2,19 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-1-dep
-  labels:
-    app: nginx-main
+  # labels:
+  #   app: app-1
 spec:
   selector:
     matchLabels:
-      app: nginx-main
+      app: app-1
   template:
     metadata:
       labels:
-        app: nginx-main
+        app: app-1
     spec:
       containers:
-      - name: nginx-main
+      - name: app-1
         image: ghcr.io/denoslab/ensf400-sample-app:v1
         ports:
         - containerPort: 8888
