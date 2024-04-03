@@ -5,8 +5,8 @@ metadata:
 data:
   nginx.cfg: |
     upstream backend {
-      server app-1:8080;
-      server app-2:8080;
+      server app-1:8888;
+      server app-2:8888;
     }
 
     server {
