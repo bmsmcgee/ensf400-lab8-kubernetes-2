@@ -41,7 +41,7 @@ _Output_
 <img width="1593" alt="Screenshot 2024-04-03 at 23 27 13" src="https://github.com/bmsmcgee/ensf400-lab8-kubernetes-2/assets/98934884/3df96570-cb47-46b9-9d6f-1db31e4ba10f">
 
 ## Step 3B: Checking
-Skip to step 4 [HERE](#step-4-running-from-nginx-ingress).
+Skip to Step 4: Running NGINX [HERE](#step-4-running-from-nginx-ingress).
 
 Ensure the ConfigMaps, Deployments, Services, Ingress, and Pods are running and/or have been created properly using `get` and `describe`. Code for each is provided under output image.
 
@@ -385,7 +385,7 @@ spec:
 ```
 ---
 
-## Step 4: Running from `nginx-ingress`
+## Step 4: Running NGINX
 
 Using an inline shell script, run the curl 20 times to get an output where the nginx is being used as a loadbalancer. The output of each app being selected is approximately equal.
 
